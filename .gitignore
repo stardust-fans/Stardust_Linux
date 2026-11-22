@@ -1,0 +1,23 @@
+# Build artifacts and local-only inputs
+out/
+*.iso
+*.iso.sha256
+*.pkg.tar.zst
+*.pkg.tar.zst.sig
+*.sfs
+*.img
+
+# User-supplied 67 MB wallpaper source. The compressed, committed deliverables
+# are wallpaper.jpg and calamares-wallpaper.jpg under the branding directory.
+bg.png
+
+# Local editor / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+cmd.exe
+
+# Python cache
+__pycache__/
+*.pyc

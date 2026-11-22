@@ -1,0 +1,47 @@
+---
+componentName: stardustarch
+
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+
+windowExpanding: normal
+windowSize: 1000px,680px
+windowPlacement: center
+
+sidebar: widget
+navigation: widget
+
+strings:
+    productName: StardustArch
+    shortProductName: Stardust
+    version: "1.0"
+    shortVersion: "1.0"
+    versionedName: StardustArch 1.0
+    shortVersionedName: StardustArch 1.0
+    bootloaderEntryName: StardustArch
+    productUrl: https://example.org/stardustarch
+    supportUrl: https://example.org/stardustarch/support
+    knownIssuesUrl: https://example.org/stardustarch/issues
+    releaseNotesUrl: https://example.org/stardustarch/releases
+    donateUrl: ""
+
+images:
+    productBanner: banner.png
+    productIcon: logo.png
+    productLogo: logo.png
+    productWallpaper: calamares-wallpaper.jpg
+    productWelcome: logo.png
+
+style:
+    SidebarBackground: "#101528"
+    SidebarText: "#eef2ff"
+    SidebarTextCurrent: "#111426"
+    SidebarBackgroundCurrent: "#f0c674"
+
+slideshow: [ "wallpaper.jpg" ]
+slideshowAPI: 2
+
+uploadServer:
+    type: none
+    url: ""
+    sizeLimit: -1

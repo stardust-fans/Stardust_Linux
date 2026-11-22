@@ -1,0 +1,4 @@
+# LIVE ENVIRONMENT ONLY.
+# Passwordless sudo exists solely so the Live user can launch Calamares and
+# perform Live administration. It is removed from the target by Calamares.
+stardust ALL=(ALL) NOPASSWD: ALL

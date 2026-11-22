@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=StardustArch Installer
+Comment=Start the Calamares installer
+Exec=/usr/bin/stardustarch-launch-calamares
+Icon=calamares
+Terminal=false
+OnlyShowIn=KDE;
+X-KDE-autostart-after=panel
+X-GNOME-Autostart-Delay=5
+NoDisplay=false

@@ -1,0 +1,61 @@
+# StardustArch base package list.
+#
+# This file is assembled by scripts/container-build.sh together with:
+#   packages.kde      (mandatory)
+#   packages.desktop  (INSTALL_DESKTOP=yes/no)
+#   packages.speed    (INSTALL_SPEED_TWEAKS=yes/no)
+#
+# Do not add kde-applications-meta anywhere. The only desktop meta package in
+# this distribution is plasma-meta, and it lives in packages.kde.
+
+# --- Base system, kernel, initramfs -----------------------------------------
+base
+linux
+linux-firmware
+amd-ucode
+intel-ucode
+mkinitcpio
+mkinitcpio-archiso
+zstd
+
+# --- Installers --------------------------------------------------------------
+# Primary GUI installer. Neither package is in the official Arch repositories,
+# so [customrepo] provides them; see pkg/calamares/ and
+# pkg/stardustarch-calamares-config/.
+calamares
+stardustarch-calamares-config
+
+# Secondary/fallback installer, kept in the Live environment only.
+archinstall
+arch-install-scripts
+
+# --- Installer/runtime tooling ----------------------------------------------
+squashfs-tools
+dosfstools
+e2fsprogs
+btrfs-progs
+xfsprogs
+f2fs-tools
+exfatprogs
+gptfdisk
+parted
+lvm2
+cryptsetup
+efibootmgr
+grub
+os-prober
+syslinux
+
+# --- Live utilities ----------------------------------------------------------
+sudo
+nano
+vim
+less
+git
+rsync
+man-db
+bash-completion
+
+# --- Virtual machine integration (useful for QEMU/VMware validation) ---------
+open-vm-tools
+qemu-guest-agent

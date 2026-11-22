@@ -1,0 +1,5 @@
+# KWin effect tuning for responsiveness.
+# Rollback: set both values to true and restart the Plasma session.
+[Plugins]
+blurEnabled=false
+contrastEnabled=false

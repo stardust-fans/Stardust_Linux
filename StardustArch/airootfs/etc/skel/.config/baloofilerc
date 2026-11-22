@@ -1,0 +1,4 @@
+# Baloo file indexing is disabled for lower background I/O.
+# Rollback: set Indexing-Enabled=true and restart Plasma.
+[Basic Settings]
+Indexing-Enabled=false

@@ -1,0 +1,18 @@
+# Speed-related packages. These are not a desktop environment.
+# Every change here has a documented cost/rollback in README.md.
+
+# zram swap instead of a disk swap partition by default.
+zram-generator
+
+# zstd is used for the squashfs, initramfs, and kernel module/firmware
+# compression already in the Arch packages. Listed explicitly for clarity.
+zstd
+
+# AppArmor is the LSM selected in the kernel command line.
+apparmor
+
+# Laptop power/performance profile integration for Plasma's powerdevil.
+power-profiles-daemon
+
+# Optional: interrupt balancing on very busy multi-device systems.
+# irqbalance

@@ -1,0 +1,16 @@
+.git
+.gitignore
+out
+bg.png
+_bg_test.jpg
+_bg_test.png
+*.iso
+*.iso.sha256
+*.img
+*.squashfs
+*.sfs
+work
+__pycache__
+*.pyc
+probe-plasma.sh
+_test.png

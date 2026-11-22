@@ -1,0 +1,39 @@
+# Maintainer: StardustArch
+#
+# This package owns /etc/calamares and the StardustArch-specific Calamares
+# module/launcher payload. The calamares package is built with
+# -DINSTALL_CONFIG=OFF, so there is exactly one owner for these paths.
+#
+# The source archive is generated locally by scripts/container-build.sh from
+# StardustArch/airootfs. It is intentionally a local, trusted build with
+# sha256sums=SKIP; this package is never published as a binary artifact.
+pkgname=stardustarch-calamares-config
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="StardustArch Calamares configuration, branding and post-install scripts"
+arch=('x86_64')
+url="https://example.org/stardustarch"
+license=('MIT')
+depends=('calamares' 'sddm' 'sudo' 'python')
+options=('!strip' '!debug')
+source=("stardustarch-calamares-config.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+  cp -a "$srcdir/rootfs/." "$pkgdir/"
+
+  # The staged rootfs was prepared by builder (UID 1000); never ship that
+  # ownership into the Live image or the installed target.
+  chown -R root:root "$pkgdir"
+
+  chmod 0755 \
+    "$pkgdir/usr/share/stardustarch/post-install-syu.sh" \
+    "$pkgdir/usr/share/stardustarch/target-cleanup.sh" \
+    "$pkgdir/usr/bin/stardustarch-launch-calamares"
+  chmod 0755 "$pkgdir/usr/lib/calamares/modules/stardustarch_options/main.py"
+
+  # Configuration and branding are ordinary readable files.
+  find "$pkgdir/etc/calamares" -type f -exec chmod 0644 {} +
+  chmod 0644 "$pkgdir/etc/xdg/autostart/stardustarch-calamares.desktop"
+  chmod 0644 "$pkgdir/usr/share/applications/stardustarch-calamares.desktop"
+}

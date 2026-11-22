@@ -1,0 +1,7 @@
+StardustArch — derived from Arch Linux
+Not affiliated with or endorsed by the Arch Linux project.
+
+Live desktop: Plasma (Wayland), autologin as "stardust".
+Installer:     Calamares — click the Install StardustArch desktop icon
+               or run: sudo -E calamares
+Fallback:      archinstall

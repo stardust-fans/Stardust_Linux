@@ -1,0 +1,8 @@
+[General]
+ColorScheme=BreezeDark
+AnimationDurationFactor=0.5
+SingleClick=false
+
+[KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=Breeze

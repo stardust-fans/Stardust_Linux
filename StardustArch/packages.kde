@@ -1,0 +1,38 @@
+# KDE Plasma desktop: exactly one desktop meta package.
+# Do NOT add kde-applications-meta, plasma-meta already pulls the Plasma
+# desktop itself. Daily applications belong in packages.desktop.
+plasma-meta
+
+# --- Minimal KDE / session support required by the spec ----------------------
+sddm
+sddm-kcm
+xorg-server
+xorg-xwayland
+qt6-wayland
+networkmanager
+wpa_supplicant
+iw
+wireless-regdb
+
+# --- Audio -------------------------------------------------------------------
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+alsa-utils
+sof-firmware
+
+# --- Chinese fonts -----------------------------------------------------------
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+
+# --- Chinese input method ----------------------------------------------------
+fcitx5
+fcitx5-rime
+fcitx5-configtool
+fcitx5-qt
+fcitx5-gtk
+
+# --- Wayland/portal integration ---------------------------------------------
+xdg-desktop-portal-kde

@@ -1,0 +1,54 @@
+# Daily-use applications. They are intentionally separate from plasma-meta.
+# Turn groups off by commenting lines out, or set INSTALL_DESKTOP="no" in
+# user.conf to omit this entire file.
+
+# --- Browser -----------------------------------------------------------------
+firefox
+firefox-i18n-zh-cn
+
+# --- Terminal ----------------------------------------------------------------
+konsole
+
+# --- File manager and archive handling --------------------------------------
+dolphin
+ark
+gvfs
+gvfs-mtp
+gvfs-smb
+
+# --- Text editor -------------------------------------------------------------
+kate
+
+# --- Screenshot and image viewing -------------------------------------------
+spectacle
+gwenview
+
+# --- Media -------------------------------------------------------------------
+mpv
+ffmpegthumbs
+
+# --- Phone integration -------------------------------------------------------
+kdeconnect
+
+# --- Bluetooth (Plasma's bluedevil front-end is in plasma-meta) --------------
+bluez
+bluez-utils
+
+# --- Basic command-line quality of life -------------------------------------
+htop
+fastfetch
+unzip
+zip
+7zip
+
+# --- Optional heavier applications (commented out by default) ---------------
+# libreoffice-fresh
+# okular
+# thunderbird
+# telegram-desktop
+# qbittorrent
+# obs-studio
+# neovim
+# cups
+# print-manager
+# system-config-printer

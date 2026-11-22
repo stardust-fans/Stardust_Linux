@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Install StardustArch
+Comment=Launch the StardustArch Calamares installer
+Exec=/usr/bin/stardustarch-launch-calamares
+Icon=calamares
+Terminal=false
+Categories=System;Settings;
+Keywords=install;calamares;stardustarch;
+StartupNotify=true

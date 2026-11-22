@@ -1,0 +1,12 @@
+NAME="StardustArch"
+PRETTY_NAME="StardustArch (derived from Arch Linux)"
+ID=stardustarch
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;120;180;255"
+HOME_URL="https://example.org/stardustarch"
+DOCUMENTATION_URL="https://example.org/stardustarch/docs"
+SUPPORT_URL="https://example.org/stardustarch/support"
+BUG_REPORT_URL="https://example.org/stardustarch/issues"
+VARIANT="KDE Plasma"
+VARIANT_ID=plasma

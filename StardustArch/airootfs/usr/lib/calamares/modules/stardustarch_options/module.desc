@@ -1,0 +1,5 @@
+---
+type: "job"
+name: "stardustarch_options"
+interface: "python"
+script: "main.py"
